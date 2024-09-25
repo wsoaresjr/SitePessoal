@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: _site
+  preview: 
+    port: 4200
+
+website:
+  page-navigation: true
+  title: "Walter Soares"
+  site-url: "https://waltersoares.com.br/"
+  
+  page-footer:
+    left: "Site criado com [Quarto](https://quarto.org/), por Walter Soares.."
+    right:
+      - icon: envelope
+        href: wsoares@live.com
+      - icon: github
+        href: https://github.com/wsoaresjr
+      - icon: linkedin
+        href: https://www.linkedin.com/in/walter-soares/
+      
+  
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: blog.qmd
+        text: Blog
+      - href: cursos.qmd
+        text: Cursos
+      - href: projetos.qmd
+        text: Projetos
+      - href: about.qmd
+        text: Sobre
+      - icon: newspaper
+        href: pdf/curriculo.pdf
+      - icon: github
+        href: https://github.com/wsoaresjr
+
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
