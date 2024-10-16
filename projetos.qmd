@@ -1,7 +1,17 @@
 ---
-title: "Projetos"
+title: "Projetos (Meu Portifólio)"
+listing:
+  - id: projetos
+    contents: projetos/
+    type: default
+    fields: [image, date, title, subtitle, categories, author, reading-time]
+    sort: "date desc"
+    categories: true
+    page-size: 10
+page-layout: full
+title-block-banner: false
+comments: false
 ---
 
-# Projetos em Destaque
 
-Em desenvolimento.
+

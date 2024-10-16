@@ -1,0 +1,19 @@
+---
+title: "Plataforma Adaptativa de Testes Educacionais"
+subtitle: "Esse projeto representa o Produto Educacional do Trabalho de Conclusão de Curso do MBA em Data Science and Analytics, pela USP/ESALq. A proposta foi desenvolver uma plataforma de teste adaptativo, controlada por uma aplicação de Machine Learning."
+author: "Walter Soares"
+categories:
+  - Aplicação Web
+  - Aprendizado de Máquina
+  - Aprendizagem
+  - Teste Adaptativo
+  - R/Shiny
+date: "2024-10-16"
+toc: true
+image: "capa-teste-adaptativo.jpg"
+comments: false
+---
+
+### 
+
+Em desenvolvimento.

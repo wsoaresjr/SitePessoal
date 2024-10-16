@@ -2,5 +2,13 @@
   {
     "listing": "/blog.html",
     "items": []
+  },
+  {
+    "listing": "/projetos.html",
+    "items": [
+      "/projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html",
+      "/projetos/projeto-robotica/projeto-robotica.html",
+      "/projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html"
+    ]
   }
 ]

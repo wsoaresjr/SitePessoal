@@ -1,0 +1,18 @@
+---
+title: "Ensino de Estatística por meio de Projetos"
+subtitle: "Como o próprio nome diz, a ideia aqui é promover o ensino de Estatística, alinhado à BNCC, utilizando a metodologia de projetos. Nesse caso, os estudantes são estimulados a desenvolver uma pesquisa e, ao longo de todo o processo são apresentados os conceitos estatísticos."
+author: "Walter Soares"
+categories:
+  - Aprendizagem
+  - Ensino por Projetos
+  - Estatística
+  - R/Shiny
+date: "2024-10-16"
+toc: true
+image: "capa-proj-ensino-estatistica.jpg"
+comments: false
+---
+
+### 
+
+Em desenvolvimento

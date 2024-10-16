@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projetos – Walter Soares</title>
+<title>Projetos (Meu Portifólio) – Walter Soares</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,7 +68,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projetos .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-categories','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projetos'] = new List('listing-projetos', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -126,29 +186,23 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#projetos-em-destaque" id="toc-projetos-em-destaque" class="nav-link active" data-scroll-target="#projetos-em-destaque">Projetos em Destaque</a></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Aplicação Web">Aplicação Web <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Aprendizado de Máquina">Aprendizado de Máquina <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Aprendizagem">Aprendizagem <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Educação Tecnológica">Educação Tecnológica <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ensino por Projetos">Ensino por Projetos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Estatística">Estatística <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Progrmação">Progrmação <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R/Shiny">R/Shiny <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Robótica">Robótica <span class="quarto-category-count">(1)</span></div><div class="category" data-category="STEM">STEM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Teste Adaptativo">Teste Adaptativo <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projetos</h1>
+<h1 class="title">Projetos (Meu Portifólio)</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -160,14 +214,149 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="projetos-em-destaque" class="level1">
-<h1>Projetos em Destaque</h1>
-<p>Em desenvolimento.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-projetos">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Aprendizagem,Ensino por Projetos,Estatística,R/Shiny" data-listing-date-sort="1729047600000" data-listing-file-modified-sort="1729118005609" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<div class="thumbnail">
+<p><a href="./projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html" class="no-external"></a></p><a href="./projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html" class="no-external">
+<p><img loading="lazy" src="./projetos/projeto-ensino-estatistica/capa-proj-ensino-estatistica.jpg" class="thumbnail-image"></p>
+</a><p><a href="./projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html" class="no-external">Ensino de Estatística por meio de Projetos</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html" class="no-external">Como o próprio nome diz, a ideia aqui é promover o ensino de Estatística, alinhado à BNCC, utilizando a metodologia de projetos. Nesse caso, os estudantes são estimulados a desenvolver uma pesquisa e, ao longo de todo o processo são apresentados os conceitos estatísticos.</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Aprendizagem'); return false;">
+Aprendizagem
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ensino por Projetos'); return false;">
+Ensino por Projetos
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Estatística'); return false;">
+Estatística
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R/Shiny'); return false;">
+R/Shiny
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="./projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html" class="no-external">
+<div class="listing-date">
+Oct 16, 2024
+</div>
+<div class="listing-author">
+Walter Soares
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Aprendizagem,Educação Tecnológica,Progrmação,Robótica,STEM" data-listing-date-sort="1729047600000" data-listing-file-modified-sort="1729121122911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2198">
+<div class="thumbnail">
+<p><a href="./projetos/projeto-robotica/projeto-robotica.html" class="no-external"></a></p><a href="./projetos/projeto-robotica/projeto-robotica.html" class="no-external">
+<p><img loading="lazy" src="./projetos/projeto-robotica/capa.jpg" class="thumbnail-image"></p>
+</a><p><a href="./projetos/projeto-robotica/projeto-robotica.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projetos/projeto-robotica/projeto-robotica.html" class="no-external">Projeto de Robótica</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./projetos/projeto-robotica/projeto-robotica.html" class="no-external">Desde 2022, um projeto social em Piau-MG oferece ensino de robótica e programação para estudantes dos ensinos fundamental (anos finais) e médio, promovendo inclusão tecnológica e equidade. Organizado em quatro módulos, o curso abrange lógica de programação, projetos com Arduino e Raspberry Pi, além da criação de bots. A iniciativa visa democratizar o acesso à tecnologia e preparar jovens para futuros desafios no campo da ciência e tecnologia.</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Aprendizagem'); return false;">
+Aprendizagem
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Educação Tecnológica'); return false;">
+Educação Tecnológica
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Progrmação'); return false;">
+Progrmação
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Robótica'); return false;">
+Robótica
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('STEM'); return false;">
+STEM
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="./projetos/projeto-robotica/projeto-robotica.html" class="no-external">
+<div class="listing-date">
+Oct 16, 2024
+</div>
+<div class="listing-author">
+Walter Soares
+</div>
+<div class="listing-reading-time">
+11 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Aplicação Web,Aprendizado de Máquina,Aprendizagem,Teste Adaptativo,R/Shiny" data-listing-date-sort="1729047600000" data-listing-file-modified-sort="1729118012197" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<div class="thumbnail">
+<p><a href="./projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html" class="no-external"></a></p><a href="./projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html" class="no-external">
+<p><img loading="lazy" src="./projetos/projeto-teste-adaptativo/capa-teste-adaptativo.jpg" class="thumbnail-image"></p>
+</a><p><a href="./projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html" class="no-external">Plataforma Adaptativa de Testes Educacionais</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html" class="no-external">Esse projeto representa o Produto Educacional do Trabalho de Conclusão de Curso do MBA em Data Science and Analytics, pela USP/ESALq. A proposta foi desenvolver uma plataforma de teste adaptativo, controlada por uma aplicação de Machine Learning.</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Aplicação Web'); return false;">
+Aplicação Web
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Aprendizado de Máquina'); return false;">
+Aprendizado de Máquina
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Aprendizagem'); return false;">
+Aprendizagem
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Teste Adaptativo'); return false;">
+Teste Adaptativo
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R/Shiny'); return false;">
+R/Shiny
+</div>
+</div>
+</div>
+<div class="metadata">
+<a href="./projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html" class="no-external">
+<div class="listing-date">
+Oct 16, 2024
+</div>
+<div class="listing-author">
+Walter Soares
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -592,7 +781,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Site criado com <a href="https://quarto.org/">Quarto</a>, por Walter Soares..</p>
+<p>Site criado com <a href="https://quarto.org/">Quarto</a>, por Walter Soares.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
