@@ -17,7 +17,8 @@ about:
       href: https://www.linkedin.com/in/walter-soares/  
 ---
 
-<p style="text-align: justify">Sou especialista em Data Science and Analytics pelo MBA da USP/ESALq, com graduação em Ciência de Dados e Licenciatura em Matemática. Atualmente, curso o Mestrado Profissional em Matemática, Estatística e Computação Aplicadas à Indústria (MECAI) no ICMC/USP.</p>
+<p style="text-align: justify">
+Sou especialista em Data Science and Analytics pelo MBA da USP/ESALq, com graduação em Ciência de Dados e Licenciatura em Matemática. Atualmente, curso o Mestrado Profissional em Matemática, Estatística e Computação Aplicadas à Indústria (MECAI) no ICMC/USP.</p>
 
 <p style="text-align: justify">Com mais de 20 anos de experiência no setor educacional, atuei em diversas funções, incluindo a Coordenação de Resultados de Avaliações Externas na Superintendência de Avaliação e Acompanhamento na **SEEDUC-RJ**, Analista de Instrumentos de Avaliação na **Fundação CAEd** e como Analista Pedagógico no **Instituto Sonho Grande**.</p>
 
