@@ -1,7 +1,9 @@
 [
   {
     "listing": "/blog.html",
-    "items": []
+    "items": [
+      "/posts/2024-10-17/transicao-carreira-dados.html"
+    ]
   },
   {
     "listing": "/projetos.html",

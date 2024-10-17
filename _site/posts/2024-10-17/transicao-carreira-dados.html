@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Walter Soares">
+<meta name="dcterms.date" content="2024-10-17">
 
-<title>Blog – Walter Soares</title>
+<title>Um olhar sobre a transição de carreira para Área de Dados – Walter Soares</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-categories','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +80,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Walter Soares</span>
     </a>
   </div>
@@ -149,23 +91,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cursos.html"> 
+    <a class="nav-link" href="../../cursos.html"> 
 <span class="menu-text">Cursos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projetos.html"> 
+    <a class="nav-link" href="../../projetos.html"> 
 <span class="menu-text">Projetos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Sobre</span></a>
   </li>  
   <li class="nav-item compact">
@@ -186,25 +128,42 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Análise de Dados">Análise de Dados <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Carreira">Carreira <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Um olhar sobre a transição de carreira para Área de Dados</h1>
+<p class="subtitle lead">Neste texto, procuro destacar a diferença entre as promessas de formações intensivas na área de Dados e a realidade, que exige uma compreensão profunda de matemática e estatística, por exemplo. Critico a superficialidade de muitos cursos e conteúdos disponíveis, ressaltando que minha própria experiência mostra a necessidade de estudos intensos e desenvolvimento projetos (preferencialmente, reais) que sejam desafiadores para alcançar sucesso sustentável na carreira.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Análise de Dados</div>
+    <div class="quarto-category">Carreira</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Walter Soares </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 17, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -214,78 +173,38 @@ window.Quarto = {
 </header>
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Imagem_Transicao.png" class="img-fluid figure-img"></p>
+<figcaption>Imagem gerada por meio de IA</figcaption>
+</figure>
+</div>
+<p>
+</p><p style="text-align: justify">
+Em um mundo cada vez mais digitalizado, a promessa de uma carreira na Área de Dados (Ciência de Dados, Análise de Dados, Engenharia de Dados e afins) brilha como um farol para muitos. Histórias de sucesso, conteúdos fragmentados, “pílulas de conteúdos” e cursos prometendo formações rápidas e indolores inundam a internet, apresentando um cenário, tentadoramente, acessível. Contudo, a realidade dessa jornada é, frequentemente, mais complexa e desafiadora do que os contos de fadas digitais sugerem. Inspirado por um artigo da Folha de São Paulo (o qual pode ser conferido neste <a href="https://www1.folha.uol.com.br/mercado/2024/04/aceita-like-resistencia-de-empresas-a-fechar-parcerias-com-influencers-cresce.shtml">link</a>), que aborda a resistência de empresas em fechar parcerias com influenciadores digitais devido à falta de resultados tangíveis, traçarei um paralelo com o mundo dos Dados, onde a superficialidade e a falta de profundidade técnica podem ser igualmente problemáticas.
+</p>
+<p style="text-align: justify">
+Assim como o artigo descreve empresários frustrados com influenciadores que prometem grande engajamento sem entregar resultados substanciais, o campo dos Dados é inundado com lives, postagens e cursos que prometem transformar novatos em especialistas quase que, da noite para o dia. Essas promessas, embora atraentes, muitas vezes escondem a complexidade inerente e a base técnica necessária para verdadeiramente se destacar na área.
+</p>
+<p style="text-align: justify">
+Os campos da Ciência de Dados, Análise de Dados e Machine Learning, por exemplo, são compostos por disciplinas intrinsecamente técnicas, fundamentadas em rigorosos conceitos matemáticos, além de álgebra linear, estatística e probabilidade. Essas, são áreas que requerem não uma compreensão superficial dos conceitos, mas uma profunda apreciação das teorias e práticas subjacentes. Ignorar esses fundamentos é preparar-se para um percurso cheio de mal-entendidos e potenciais falhas na aplicação prática do modelos.
+</p>
+<p style="text-align: justify">
+Minha própria jornada, por exemplo, com mais de vinte anos lecionando matemática em redes de ensino pública e privada à graduação em Ciência de Dados, seguida por um MBA na USP/ESALq e, agora, mestrado na USP, ilustra a natureza desafiadora desta transição. A diferença crítica entre a percepção pública e a realidade acadêmica e profissional da Ciência de Dados é vasta. As dificuldades encontradas na compreensão e aplicação de Machine Learning, por exemplo, são um testemunho do abismo entre a percepção popular e a prática real da disciplina.
+</p>
+<p style="text-align: justify">
+Assim como a indústria começa a resistir à superficialidade de certas parcerias com influenciadores, penso que os aspirantes a cientistas de dados devem buscar uma compreensão autêntica e profunda de sua disciplina. A verdadeira competência em Ciência de Dados exige dedicação, um estudo rigoroso dos fundamentos matemáticos e estatísticos, e uma aplicação cuidadosa e ética desses conhecimentos. O caminho pode ser longo e cheio de desafios, mas é somente através da profundidade de compreensão que podemos esperar alcançar resultados significativos e duradouros na interseção entre dados, tecnologia e sociedade.
+</p>
+<p style="text-align: justify">
+Além disso, um ponto crítico que merece atenção na jornada de aprendizado na área de Dados é a construção de portfólios. Percebo em muitos sites (ou postagens) uma exagerada utilização de conjuntos de dados já bastante explorados em contextos acadêmicos, limitando assim o potencial criativo e investigativo dos estudantes. Esta abordagem, embora útil para o entendimento inicial de técnicas e ferramentas, pode não preparar adequadamente os futuros profissionais para os desafios complexos e multifacetados que encontrarão no mercado de trabalho. A verdadeira valorização vem de projetos que abordem problemas reais, com dados não tratados e questões inexploradas. Esses projetos não apenas demonstram habilidade técnica, mas também criatividade, capacidade de lidar com a incerteza e habilidade para extrair insights valiosos de situações ambíguas – competências essenciais para qualquer cientista de dados que deseja se destacar profissionalmente.
+</p>
+<p style="text-align: justify">
+Para quem está considerando ou já iniciou sua trajetória na área de Dados, a profundidade é chave. Incentivo que mergulhem nos princípios dos conceitos matemáticos, bem como os de estatística e probabilidade que são pilares desta área. É preciso que vocês sejam questionadores ao escolher cursos, lives ou postagens. O foco deve estar em desenvolver uma fundação sólida de conhecimentos, que não apenas em impulsionar sua carreira por meio de processos formativos que, muitas de vezes, apenas, apresentam scripts e códigos da aplicação de modelos estatísticos sem o aprofundamento necessário para uma formação consistente.
+</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-posts">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-posts-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Análise de Dados,Carreira" data-listing-date-sort="1729134000000" data-listing-file-modified-sort="1729139877077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="682">
-<div class="thumbnail">
-<p><a href="./posts/2024-10-17/transicao-carreira-dados.html" class="no-external"></a></p><a href="./posts/2024-10-17/transicao-carreira-dados.html" class="no-external">
-<p><img loading="lazy" src="./posts/2024-10-17/capa_post.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/2024-10-17/transicao-carreira-dados.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2024-10-17/transicao-carreira-dados.html" class="no-external">Um olhar sobre a transição de carreira para Área de Dados</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2024-10-17/transicao-carreira-dados.html" class="no-external">Neste texto, procuro destacar a diferença entre as promessas de formações intensivas na área de Dados e a realidade, que exige uma compreensão profunda de matemática e estatística, por exemplo. Critico a superficialidade de muitos cursos e conteúdos disponíveis, ressaltando que minha própria experiência mostra a necessidade de estudos intensos e desenvolvimento projetos (preferencialmente, reais) que sejam desafiadores para alcançar sucesso sustentável na carreira.</a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Análise de Dados'); return false;">
-Análise de Dados
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Carreira'); return false;">
-Carreira
-</div>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2024-10-17/transicao-carreira-dados.html" class="no-external">
-<div class="listing-date">
-Oct 17, 2024
-</div>
-<div class="listing-author">
-Walter Soares
-</div>
-<div class="listing-reading-time">
-4 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -706,6 +625,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="wsoaresjr/SitePessoal" data-repo-id="R_kgDOM2_ZwQ" data-category="General" data-category-id="DIC_kwDOM2_Zwc4Cjbn5" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -718,7 +641,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="./wsoares@live.com">
+    <a class="nav-link" href="../../wsoares@live.com">
       <i class="bi bi-envelope" role="img">
 </i> 
     </a>
