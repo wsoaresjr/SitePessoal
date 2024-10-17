@@ -10,7 +10,7 @@ website:
   site-url: "https://waltersoares.com.br/"
   
   page-footer:
-    left: "Site criado com [Quarto](https://quarto.org/), por Walter Soares.."
+    left: "Site criado com [Quarto](https://quarto.org/), por Walter Soares."
     right:
       - icon: envelope
         href: wsoares@live.com
@@ -33,7 +33,7 @@ website:
       - href: about.qmd
         text: Sobre
       - icon: newspaper
-        href: https://wsoaresjr.github.io/Curriculo/curriculo.pdf
+        href: ""
       - icon: github
         href: https://github.com/wsoaresjr
 
