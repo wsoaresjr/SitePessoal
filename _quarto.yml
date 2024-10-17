@@ -30,6 +30,8 @@ website:
         text: Cursos
       - href: projetos.qmd
         text: Projetos
+      - href: contato.qmd
+        text: Contato
       - href: about.qmd
         text: Sobre
       - icon: newspaper
