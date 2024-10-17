@@ -33,7 +33,7 @@ website:
       - href: about.qmd
         text: Sobre
       - icon: newspaper
-        href: pdf/curriculo.pdf
+        href: https://wsoaresjr.github.io/Curriculo/curriculo.pdf
       - icon: github
         href: https://github.com/wsoaresjr
 
