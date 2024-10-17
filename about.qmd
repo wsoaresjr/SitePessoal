@@ -1,10 +1,13 @@
 ---
 title: "Sobre"
+comments: false
 ---
 
 ### SÍNTESE PROFISSIONAL
 
-<p style="text-align: justify">Especialista em Data Science e Analytics com MBA pela USP/ESALq e mais de 20 anos de experiência no setor educacional. Graduado em Ciência de Dados e Licenciatura em Matemática, atualmente cursando o Mestrado Profissional em Matemática, Estatística e Computação Aplicadas à Indústria (MECAI/USP). Experiência sólida em estatística, desenvolvimento de aplicativos web e consultoria de dados, com foco em Avaliações de Larga Escala, Teoria de Resposta ao Item e Machine Learning.</p> <br> <br>
+<p style="text-align: justify">Especialista em Data Science e Analytics com MBA pela USP/ESALq e mais de 20 anos de experiência no setor educacional. Graduado em Ciência de Dados e Licenciatura em Matemática, atualmente cursando o Mestrado Profissional em Matemática, Estatística e Computação Aplicadas à Indústria (MECAI/USP). Experiência sólida em estatística, desenvolvimento de aplicativos web e consultoria de dados, com foco em Avaliações de Larga Escala, Teoria de Resposta ao Item e Machine Learning.</p>
+
+<br> <br>
 
 **Em Desenvolvimento**
 
