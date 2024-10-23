@@ -1,59 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://waltersoares.com.br/index.html</loc>
-    <lastmod>2024-10-17T03:25:10.339Z</lastmod>
-  </url>
-  <url>
-    <loc>http://waltersoares.com.br/index.html</loc>
-    <lastmod>2024-09-24T19:01:27.394Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waltersoares.com.br/blog.html</loc>
-    <lastmod>2024-10-16T21:10:48.779Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waltersoares.com.br/cursos.html</loc>
-    <lastmod>2024-10-17T19:45:44.931Z</lastmod>
-  </url>
-  <url>
     <loc>https://waltersoares.com.br/projetos.html</loc>
     <lastmod>2024-10-17T03:09:46.449Z</lastmod>
   </url>
   <url>
-    <loc>https://waltersoares.com.br/about.html</loc>
-    <lastmod>2024-10-17T19:45:32.314Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waltersoares.com.br/projetos/projeto_robotica/Projeto Robótica.html</loc>
-    <lastmod>2024-10-16T20:28:58.142Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waltersoares.com.br/projetos/projeto_robotica/ProjetoRobotica.html</loc>
-    <lastmod>2024-10-16T21:03:10.465Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waltersoares.com.br/projetos/primeiro-post/projeto-robotica.html</loc>
-    <lastmod>2024-10-16T21:29:00.731Z</lastmod>
-  </url>
-  <url>
     <loc>https://waltersoares.com.br/projetos/projeto-robotica/projeto-robotica.html</loc>
-    <lastmod>2024-10-21T20:32:45.664Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waltersoares.com.br/projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html</loc>
-    <lastmod>2024-10-17T04:25:46.078Z</lastmod>
-  </url>
-  <url>
-    <loc>https://waltersoares.com.br/projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html</loc>
-    <lastmod>2024-10-23T17:58:39.558Z</lastmod>
+    <lastmod>2024-10-23T19:30:07.277Z</lastmod>
   </url>
   <url>
     <loc>https://waltersoares.com.br/posts/2024-10-17/transicao-carreira-dados.html</loc>
     <lastmod>2024-10-17T04:37:57.077Z</lastmod>
   </url>
   <url>
+    <loc>https://waltersoares.com.br/cursos.html</loc>
+    <lastmod>2024-10-17T19:45:44.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waltersoares.com.br/blog.html</loc>
+    <lastmod>2024-10-16T21:10:48.779Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waltersoares.com.br/about.html</loc>
+    <lastmod>2024-10-17T19:45:32.314Z</lastmod>
+  </url>
+  <url>
     <loc>https://waltersoares.com.br/contato.html</loc>
     <lastmod>2024-10-18T03:42:59.901Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waltersoares.com.br/index.html</loc>
+    <lastmod>2024-10-17T03:25:10.339Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waltersoares.com.br/projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html</loc>
+    <lastmod>2024-10-23T19:31:59.704Z</lastmod>
+  </url>
+  <url>
+    <loc>https://waltersoares.com.br/projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html</loc>
+    <lastmod>2024-10-17T04:25:46.078Z</lastmod>
   </url>
 </urlset>

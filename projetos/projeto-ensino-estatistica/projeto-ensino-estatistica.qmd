@@ -8,7 +8,7 @@ categories:
   - Estatística
   - R/Shiny
   - Tecnologia na Educação
-date: "2024-10-16"
+date: "2024-10-15"
 toc: true
 image: "capa-proj-ensino-estatistica.jpg"
 comments: false
@@ -51,7 +51,7 @@ format: html
 
 <br>
 
-<br> 
+<br>
 
 <p style="text-align: justify">A seguir, é apresentada uma galeria de fotos da aplicação do projeto em algumas turmas:</p>
 
@@ -71,4 +71,3 @@ imagens <- c("img/img01.jpeg", "img/img02.jpeg", "img/img03.jpeg",
 
 slickR(imagens, width = "80%", height = 400)
 ```
-

@@ -1,16 +1,16 @@
 [
   {
-    "listing": "/blog.html",
+    "listing": "/projetos.html",
     "items": [
-      "/posts/2024-10-17/transicao-carreira-dados.html"
+      "/projetos/projeto-robotica/projeto-robotica.html",
+      "/projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html",
+      "/projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html"
     ]
   },
   {
-    "listing": "/projetos.html",
+    "listing": "/blog.html",
     "items": [
-      "/projetos/projeto-ensino-estatistica/projeto-ensino-estatistica.html",
-      "/projetos/projeto-robotica/projeto-robotica.html",
-      "/projetos/projeto-teste-adaptativo/projeto-teste-adaptativo.html"
+      "/posts/2024-10-17/transicao-carreira-dados.html"
     ]
   }
 ]
