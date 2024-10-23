@@ -1,18 +1,73 @@
 ---
 title: "Ensino de Estatística por meio de Projetos"
-subtitle: "Como o próprio nome diz, a ideia aqui é promover o ensino de Estatística, alinhado à BNCC, utilizando a metodologia de projetos. Nesse caso, os estudantes são estimulados a desenvolver uma pesquisa e, ao longo de todo o processo são apresentados os conceitos estatísticos."
+subtitle: "A ideia é potencializar o ensino de Estatística, alinhado à BNCC, utilizando a metodologia de projetos, com recurso de tecnologia. Nesse caso, os estudantes foram estimulados a desenvolver uma pesquisa e, ao longo de todo o processo foram apresentados os conceitos estatísticos."
 author: "Walter Soares"
 categories:
   - Aprendizagem
   - Ensino por Projetos
   - Estatística
   - R/Shiny
+  - Tecnologia na Educação
 date: "2024-10-16"
 toc: true
 image: "capa-proj-ensino-estatistica.jpg"
 comments: false
+format: html
 ---
 
 ### 
 
-Em desenvolvimento
+![](resumo_projeto.png){fig-align="center" width="100%"}
+
+<p style="text-align: justify">Este projeto, desenvolvido no ano de 2021, representa um marco em minha trajetória como educador e pesquisador, integrando tecnologia e metodologias ativas para o ensino de Estatística. Motivado pela minha experiência docente e pela constante busca por abordagens mais envolventes e eficazes para o ensino de conteúdos, tradicionalmente, percebidos como complexos e abstratos, desenvolvi uma plataforma baseada em um aplicativo web utilizando R e o pacote Shiny, entre outros, visando fomentar o ensino de Estatística por meio de projetos. Esse projeto reflete o compromisso com a inovação pedagógica e a aplicação prática do conhecimento, sempre buscando superar os desafios impostos pela educação tradicional e ampliar as possibilidades de aprendizagem significativa para os estudantes.</p>
+
+<p style="text-align: justify">A concepção deste projeto fundamenta-se na premissa de que a Estatística é mais bem assimilada quando os estudantes assumem o papel de protagonistas no processo de aprendizagem, engajando-se em atividades que envolvem a coleta, a análise e a interpretação de dados reais. Assim, busquei desenvolver uma ferramenta que possibilitasse a aplicação direta dos conceitos estatísticos, proporcionando uma experiência prática que integra teoria e prática em contextos do cotidiano dos estudantes. A ideia era que os estudantes pudessem visualizar e atribuir significado aos conceitos estatísticos enquanto trabalhavam com dados reais em projetos relevantes ao contexto em que estavam inseridos. Essa abordagem não só facilita a compreensão dos conceitos mas, também, promove uma aprendizagem ativa, onde os estudantes se sentem parte integrante do processo, capaz de explorar, questionar e construir seu próprio entendimento sobre os fenômenos estudados.</p>
+
+<p style="text-align: justify">A relevância desta pesquisa está, intimamente, associada à crescente necessidade de promover o letramento estatístico entre os jovens. Em um mundo cada vez mais orientado por dados, é fundamental que os estudantes desenvolvam não, apenas, habilidades operacionais mas, também, uma capacidade crítica para interpretar e avaliar as informações que lhes são apresentadas. A habilidade de compreender, interpretar e questionar dados estatísticos é essencial para a formação de cidadãos conscientes e preparados para tomar decisões informadas em suas vidas pessoais e profissionais. A inserção desse projeto no contexto educacional visa, exatamente, capacitar os estudantes a lidarem com informações complexas de maneira crítica, permitindo-lhes navegar com mais segurança em um ambiente onde os dados desempenham um papel central.</p>
+
+<p style="text-align: justify">Para isso, utilizei a metodologia da Engenharia Didática, permitindo que todo o processo fosse validado em ambientes reais de sala de aula, assegurando a aplicabilidade da teoria e a constante revisão das hipóteses à medida que surgiam os desafios. A Engenharia Didática é uma abordagem robusta que envolve desde a concepção e planejamento das atividades até a experimentação e a análise a *posteriori*, o que garante uma compreensão profunda dos impactos do produto educacional sobre o aprendizado dos estudantes. Essa metodologia foi crucial para identificar dificuldades, adaptar estratégias e garantir que a aplicação web desenvolvida atendesse efetivamente às necessidades dos alunos e professores, promovendo uma aprendizagem significativa e contextualizada.</p>
+
+<p style="text-align: justify">Um dos principais desafios deste projeto foi a mudança de paradigma exigida tanto dos alunos quanto minha. A introdução de um aplicativo web no contexto educacional não faz parte da tradição pedagógica em muitas instituições, e a transição para uma abordagem mais ativa e baseada em projetos demandou uma mudança significativa na maneira de encarar o processo de ensino-aprendizagem. Não se tratava, apenas, de ensinar conceitos estatísticos mas, também, de promover o uso da tecnologia de forma significativa, incentivando uma aprendizagem mais autônoma e criativa. Essa mudança de paradigma envolveu um esforço conjunto para alterar a dinâmica tradicional da sala de aula, favorecendo um ambiente onde a curiosidade, a investigação e a construção coletiva do conhecimento fossem incentivadas.</p>
+
+<p style="text-align: justify">Uma etapa importante do processo foi a realização de uma avaliação diagnóstica com os estudantes, a fim de entender o nível de conhecimento prévio que eles possuíam sobre Estatística. Esse diagnóstico foi fundamental para o planejamento das aulas, permitindo uma abordagem personalizada e alinhada às necessidades dos estudantes. Ao final do processo, os estudantes foram reavaliados por meio de uma nova avaliação diagnóstica, e os resultados demonstraram melhorias significativas em comparação com a avaliação inicial. Esse progresso evidenciou o impacto positivo da metodologia adotada e do uso da plataforma na aprendizagem dos conceitos estatísticos. Com base nos resultados da avaliação, pude ajustar o conteúdo e as atividades de modo a garantir que todos pudessem acompanhar o desenvolvimento dos projetos de forma eficiente.</p>
+
+<p style="text-align: justify">Desde o início, os estudantes foram estimulados a desenvolver uma pesquisa baseada na livre escolha de seus temas de interesse. A ideia era que, com o avanço das aulas, eles aplicassem os conhecimentos aprendidos ao projeto que estavam desenvolvendo. Esse processo envolveu desde a criação do formulário de coleta de dados, com as perguntas que fariam parte da investigação, até o tratamento das informações coletadas, a análise dos resultados e a elaboração de um relatório final. Essa abordagem permitiu que os estudantes não, apenas, aprendessem conceitos teóricos mas, também, aplicassem esses conceitos em uma situação prática, desenvolvendo habilidades de pesquisa e análise crítica. Os estudantes também relataram uma elevada satisfação ao desenvolverem um projeto a partir de um tema de suas próprias escolhas, destacando a relevância pessoal dos tópicos investigados e o aumento do engajamento durante o processo. Além disso, eles expressaram grande satisfação com o uso da plataforma, afirmando que a ferramenta facilitou o aprendizado dos conceitos estatísticos e tornou a experiência mais dinâmica e interessante.</p>
+
+<p style="text-align: justify">Além disso, o uso do aplicativo web permitiu uma integração maior entre os diferentes conceitos estatísticos e as práticas reais dos estudantes. A plataforma foi desenvolvida de maneira a proporcionar uma interface amigável e intuitiva, que permitisse aos estudantes explorar diferentes conjuntos de dados, realizar análises e visualizar os resultados de maneira dinâmica. Essa interação direta com os dados proporcionou uma compreensão mais profunda dos conceitos de variabilidade, distribuição e inferência, permitindo que os estudantes enxergassem a Estatística como uma ferramenta prática e aplicável em diversas áreas do conhecimento e da vida cotidiana. Esse processo de construção ativa do conhecimento trouxe, para mim, um novo sentido para o aprendizado da Estatística, que deixou de ser um conteúdo meramente teórico e passou a ser uma ferramenta empoderadora.</p>
+
+<p style="text-align: justify">A pesquisa foi realizada com estudantes de escolas públicas dos municípios de Três Rios (RJ) e Juiz de Fora (MG).,Aproveito para registrar meu agradecimento à professora Fabiana Polessa que, gentilmente, disponibilizou parte das suas aulas para a realização deste estudo. Sem essa colaboração, não teria sido possível implementar e validar as atividades planejadas em um ambiente de sala de aula real. Nesse contexto, essa parceria foi essencial para o sucesso do projeto.</p>
+
+<p style="text-align: justify">As contribuições deste projeto se manifestaram em múltiplas frentes:</p>
+
+<p style="text-align: justify">-   No campo educacional, proporcionou uma experiência enriquecedora para os estudantes, que puderam desenvolver competências fundamentais, como o pensamento crítico, o letramento estatístico e a capacidade de tomada de decisões fundamentadas em dados. Esses são elementos essenciais para formar cidadãos preparados para enfrentar os desafios do século XXI, onde a capacidade de interpretar informações e tomar decisões baseadas em evidências é cada vez mais valorizada. A experiência prática proporcionada pelo aplicativo, também, foi uma oportunidade para os estudantes desenvolverem habilidades de resolução de problemas, colaboração e comunicação, uma vez que, mesmo em projetos individuais, frequentemente, percebia o envolvimento dos estudantes na busca conjunta para a resolução dos problemas encontrados;</p>
+
+<p style="text-align: justify">-   No campo tecnológico, o desenvolvimento do aplicativo web em R/Shiny representou um desafio de programação, desenvolvimento e design, no qual a simplicidade e a usabilidade foram priorizadas para garantir que, qualquer estudante, independentemente, de seu conhecimento tecnológico prévio, pudesse utilizar a ferramenta de forma eficaz. Essa simplicidade, contudo, não diminuiu o poder da ferramenta, que foi capaz de oferecer funcionalidades complexas e análises sofisticadas de maneira acessível. A escolha do R e do Shiny foi estratégica, pois são ferramentas, amplamente, utilizadas na comunidade acadêmica e, que possibilitam uma ampla gama de funcionalidades, permitindo desde análises exploratórias simples até modelagens estatísticas avançadas. O desenvolvimento do aplicativo, também, envolveu questões de acessibilidade e responsividade, de modo que a ferramenta pudesse ser utilizada em diferentes dispositivos, facilitando seu acesso e uso pelos estudantes em diversos contextos.</p>
+
+<p style="text-align: justify">A pesquisa que embasou esse projeto foi, também, um aspecto de destaque. Fundamentou-se em documentos internacionais, como os relatórios ***Guidelines for Assessment and Instruction in Statistics Education** (**GAISE***), e em diretrizes nacionais, como a **Base Nacional Comum Curricular** (**BNCC**), para assegurar que o desenvolvimento da ferramenta estivesse alinhado às diretrizes educacionais e atendesse às necessidades reais do ensino de Estatística. Além disso, foram de fundamental importância os trabalhos de autores como **Iddo Gal** (Universidade de Haifa), **Dani Ben-Zvi** (Universidade de Haifa), **Joan B. Garfield** (Universidade de Minessota), **Carmen Batanero** (Universidade de Granada) e **Marcos Magalhães** (Universidade de São Paulo). Em especial, as contribuições de Carmen Batanero e Marcos Magalhães no ensino de Estatística por meio de projetos foram cruciais para a concepção e implementação deste projeto. Os relatórios ***GAISE***, em particular, destacam a importância de uma abordagem pedagógica que valorize o desenvolvimento do pensamento estatístico, a interpretação de dados e a capacidade de comunicação dos resultados. Esses princípios, juntamente com as contribuições dos autores mencionados, nortearam o desenvolvimento do aplicativo e das atividades propostas, assegurando que os estudantes não, apenas, aprendessem a fazer cálculos mas, também, compreendessem o significado dos resultados e comunicassem suas conclusões de maneira clara e fundamentada.</p>
+
+<p style="text-align: justify">Outra característica importante do desenvolvimento deste projeto foi a consideração das opiniões dos estudantes para o aprimoramento da plataforma. Ao longo do processo, os estudantes foram incentivados a compartilhar suas impressões sobre a usabilidade e as funcionalidades do aplicativo e suas sugestões foram fundamentais para ajustes e melhorias na ferramenta. A plataforma, ainda, está em constante atualização, e novas funcionalidades estão sendo integradas para torná-la cada vez mais completa e alinhada às necessidades dos usuários. Essa colaboração contínua com os estudantes não só tornou o produto mais robusto mas, também, engajou os alunos no processo de criação, promovendo um senso de pertencimento e participação ativa.</p>
+
+<p style="text-align: justify">O resultado foi um produto educacional que cumpre uma função além da acadêmica, ao proporcionar que a plataforma possa ser utilizada por outros educadores que compartilhem dessa visão de um ensino mais prático, significativo e orientado para a realidade dos estudantes. A plataforma desenvolvida pode ser adaptada e aplicada em diferentes contextos, desde o ensino médio até cursos de graduação, ampliando o alcance e o impacto da proposta. Minha expectativa é que esse projeto possa inspirar outros educadores a explorar o uso da tecnologia e das metodologias ativas no ensino da Estatística, contribuindo para uma educação que seja, de fato, transformadora.</p>
+
+<br>
+<br> 
+
+<p style="text-align: justify">A seguir, é apresentada uma galeria de fotos da aplicação do projeto em algumas turmas:</p>
+
+<br>
+
+```{r echo=FALSE}
+library(slickR)
+
+imagens <- c("img/img01.jpeg", "img/img02.jpeg", "img/img03.jpeg",
+             "img/img04.jpeg", "img/img05.jpeg", "img/img06.jpeg",
+             "img/img07.jpeg", "img/img08.jpeg", "img/img09.jpeg",
+             "img/img10.jpeg", "img/img11.jpeg", "img/img12.jpeg",
+             "img/img13.jpeg", "img/img14.jpeg", "img/img15.jpeg",
+             "img/img16.jpeg", "img/img17.jpeg", "img/img18.jpeg",
+             "img/img19.jpeg", "img/img20.jpeg", "img/img21.jpeg",
+             "img/img22.jpeg")
+
+slickR(imagens, width = "80%", height = 400)
+```
+
