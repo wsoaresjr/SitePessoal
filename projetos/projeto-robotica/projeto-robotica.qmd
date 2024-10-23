@@ -8,7 +8,7 @@ categories:
   - Progrmação
   - Robótica
   - STEM
-date: "2024-10-23"
+date: "2024-10-22"
 toc: true
 image: "capa.jpg"
 comments: false
