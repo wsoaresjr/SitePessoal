@@ -50,6 +50,7 @@ format: html
 <p style="text-align: justify">O resultado foi um produto educacional que cumpre uma função além da acadêmica, ao proporcionar que a plataforma possa ser utilizada por outros educadores que compartilhem dessa visão de um ensino mais prático, significativo e orientado para a realidade dos estudantes. A plataforma desenvolvida pode ser adaptada e aplicada em diferentes contextos, desde o ensino médio até cursos de graduação, ampliando o alcance e o impacto da proposta. Minha expectativa é que esse projeto possa inspirar outros educadores a explorar o uso da tecnologia e das metodologias ativas no ensino da Estatística, contribuindo para uma educação que seja, de fato, transformadora.</p>
 
 <br>
+
 <br> 
 
 <p style="text-align: justify">A seguir, é apresentada uma galeria de fotos da aplicação do projeto em algumas turmas:</p>
