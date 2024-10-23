@@ -8,7 +8,7 @@ categories:
   - Estatística
   - R/Shiny
   - Tecnologia na Educação
-date: "2024-10-15"
+date: "2024-10-17"
 toc: true
 image: "capa-proj-ensino-estatistica.jpg"
 comments: false

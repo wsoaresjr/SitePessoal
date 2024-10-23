@@ -8,12 +8,63 @@ categories:
   - Aprendizagem
   - Teste Adaptativo
   - R/Shiny
-date: "2024-10-16"
+date: "2024-10-23"
 toc: true
 image: "capa-teste-adaptativo.jpg"
 comments: false
 ---
 
-### 
+![](resumo_projeto.png){fig-align="center" width="100%"}
 
-Em desenvolvimento.
+### Introdução
+
+<p style="text-align: justify">Este projeto, conteúdo do Trabalho de Conclusão de Curso (TCC) do *MBA em Data Science and Analytics*, pela USP/ESALq, apresentado em Janeiro de 2024, surge, da minha percepção, sobre a necessidade de aprimorar as avaliações educacionais em larga escala, oferecendo uma alternativa eficiente e personalizada em comparação aos testes padronizados tradicionais. As avaliações padronizadas, embora venham desempenhando um papel fundamental no diagnóstico da qualidade do ensino, apresentam limitações, como o impacto da quantidade excessiva de itens e o desgaste dos estudantes durante o processo avaliativo. Neste sentido, a implementação de um teste adaptativo propõe uma abordagem mais centrada nas necessidades individuais dos alunos, permitindo uma medição mais acurada das suas habilidades e, possivelmente, um maior engajamento no processo avaliativo.</p>
+
+### Desenvolvimento da Plataforma
+
+<p style="text-align: justify">A partir do estudo realizado, desenvolvi uma plataforma de teste adaptativo online, utilizando a linguagem de programação R e o pacote Shiny, entre outros. A relevância deste projeto reside em seu potencial para fornecer avaliações mais precisas e adaptativas, ajustando-se ao nível de proficiência dos estudantes e, assim, reduzindo a quantidade de itens apresentados e a fadiga associada ao processo avaliativo. Essa capacidade de ajustar, dinamicamente, a dificuldade dos itens com base no desempenho do estudante permite uma experiência de avaliação mais eficaz, ao mesmo tempo em que fornece resultados mais confiáveis e significativos para os educadores. Além disso, essa abordagem promove uma personalização que não é alcançada pelos modelos tradicionais de avaliação, favorecendo o desenvolvimento de planos de intervenção mais adequados às necessidades de cada estudante.</p>
+
+### Metodologia
+
+<p style="text-align: justify">Durante a fase de modelagem, testei alguns modelos, dentre eles: **Random Forest**, **XGBoost** e **Árvores de Decisão**. Acabei optando pela **Regressão Linear Múltipla** devido ao seu desempenho robusto e simplicidade de implementação. Embora o **XGBoost** tenha apresentado, ligeiramente, melhores métricas de precisão, a **Regressão Linear Múltipla** foi escolhida por ser mais facilmente interpretável e menos suscetível a problemas de *overfitting*, tornando-a mais adequada para o público-alvo educacional. O modelo de **Regressão Linear Múltipla** apresenta vantagens importantes, como a facilidade de comunicação dos resultados para profissionais da educação que, nem sempre, possuem formação técnica em estatística ou *machine learning*, e a transparência dos coeficientes estimados, que permitem uma interpretação direta sobre o impacto de cada variável no desempenho dos estudantes.</p>
+
+<p style="text-align: justify">O desenvolvimento da plataforma seguiu as diretrizes do ***Cross Industry Standard Process for Data Mining*** (***CRISP-DM***), uma metodologia consolidada para projetos de mineração de dados. As etapas incluíram a compreensão do objeto de estudo, a análise e preparação dos dados, a modelagem, a avaliação dos resultados e a implementação do modelo. Esse processo metodológico permitiu a criação de uma solução, alinhada às necessidades do contexto educacional.</p>
+
+![Fases do Modelo CRISP-DM. Fonte: Shearer, 2000.](crisp-dm.jpg){fig-align="center" width="80%"}
+
+<br>
+
+<p style="text-align: justify">A fase inicial de compreensão do problema do objeto de estudo foi fundamental para garantir que o modelo estivesse alinhado com os objetivos educacionais e, não apenas, com métricas estatísticas. A etapa de preparação dos dados, por sua vez, demandou um extenso trabalho de limpeza e transformação, a fim de garantir a qualidade dos dados utilizados e minimizar o risco de introdução de vieses no modelo.</p>
+
+<p style="text-align: justify">A plataforma web desenvolvida possibilita a aplicação dos testes adaptativos mas, também, fornece *feedbacks* imediatos e formativos tanto para estudantes quanto para professores. Esses relatórios de *feedback* apresentam informações detalhadas sobre o desempenho dos estudantes, permitindo a identificação de descritores específicos que necessitam de reforço. Por exemplo, ao identificar um descritor em que um grupo significativo de estudantes apresenta dificuldades, os professores podem adaptar suas práticas pedagógicas para atender a essas necessidades. Dessa forma, a plataforma contribui, diretamente, para a melhoria do processo de ensino e aprendizagem, ao fornecer uma visão clara e acionável sobre os pontos fortes e fracos dos estudantes. A potencialidade desta aplicação está em sua flexibilidade para expansão a outras disciplinas, assim como na possibilidade de evoluir para incluir funcionalidades configuráveis pelos professores, como a seleção de descritores específicos a serem avaliados. Essa possibilidade de customização é um diferencial importante, pois permite que a plataforma se adapte aos diferentes contextos e necessidades educacionais, favorecendo uma utilização ampla e variada. Cabe ressaltar que a aplicação web desenvolvida para o teste adaptativo está em atualização, visando uma melhor experiência do usuário, novas funcionalidades para que se possa realizar o registro da aplicação junto ao Instituto Nacional da Propriedade Industrial (INPI).</p>
+
+### Resultados
+
+<p style="text-align: justify">Os resultados desta pesquisa evidenciam a eficácia da metodologia proposta. A plataforma demonstrou ser capaz de prever, com precisão, a proficiência dos estudantes, apresentando um coeficiente de determinação (R²) de 97,81%, o que indica uma elevada capacidade do modelo em explicar a variabilidade das proficiências observadas. A precisão do modelo é fundamental para garantir a confiabilidade dos resultados obtidos, que são utilizados para informar decisões pedagógicas. Cabe ressaltar que a análise da distribuição da proficiência, por meio de histogramas, revelou uma aproximação à normalidade, o que reforça a qualidade do ajuste do modelo.</p>
+
+<p style="text-align: justify">Além disso, a aplicação de métodos de regularização, como ***Lasso*** e ***Ridge***, foi considerada para melhorar, ainda, mais a robustez do modelo, embora, os resultados não tenham indicado uma necessidade significativa de regularização adicional, sugerindo que o modelo original já apresentava um bom ajuste aos dados.</p>
+
+### Conclusão e Perspectivas Futuras
+
+<p style="text-align: justify">Os testes adaptativos, como os desenvolvidos neste projeto, representam uma opção em relação às avaliações tradicionais, pois permitem a adaptação do teste em tempo real, com base no desempenho do estudante. Isso torna a avaliação mais justa e motivadora, uma vez que cada estudante é desafiado de acordo com seu nível de habilidade, evitando tanto a frustração quanto o tédio. Além disso, a plataforma permite que os resultados sejam armazenados e analisados de forma longitudinal, possibilitando um acompanhamento detalhado do progresso dos estudantes ao longo do tempo. Essa abordagem longitudinal pode fornecer *insights* valiosos sobre a evolução do aprendizado, identificando padrões de desenvolvimento e áreas que requerem intervenção contínua. Um próximo passo para este projeto é implementá-lo em uma escala maior, por exemplo, em uma rede municipal de ensino, visando ampliar seu impacto e validar sua eficácia em diferentes contextos educacionais.</p>
+
+<p style="text-align: justify">Gostaria de expressar meus agradecimentos ao Professor **Walter Mesquista Filho** (meu Orientador) e ao Professor **Evandro Marcos Saidel Ribeiro** (Professor Ttitular da USP e Avaliador desse estudo) pelo apoio contínuo e pelas contribuições substanciais durante esse projeto, as quais possibilitaram o desenvolvimento de uma plataforma com potencial para a área educacional. Essa contribuição visa não, apenas, aprimorar a qualidade das avaliações mas, também, assegurar o direito ao aprendizado significativo para todos os estudantes. A colaboração entre pesquisa acadêmica e prática educacional, que este projeto exemplifica, é essencial para garantir que as inovações tecnológicas realmente atendam às necessidades dos educadores e dos alunos, contribuindo para um sistema educacional mais justo e eficaz.</p>
+
+<p style="text-align: justify">Como última informação, nesse Trabalho de Conclusão de Curso (TCC), do **MBA em Data Science and Analytics, pela USP/ESALq**, no qual **obtive grau máximo (10,0) e, além disso, foi indicado ao prêmio de melhor TCC**.</p>
+
+<br>
+
+<br>
+
+<p style="text-align: justify">A seguir, são apresentados alguns prints de telas do prótipo da aplicação web, apresentado no momento da defesa do TCC. Reforço a informação de que, essa aplicação encontra-se em atualização.</p>
+
+```{r echo=FALSE}
+library(slickR)
+
+imagens <- c("img/img0.png", "img/img1.png", "img/img2.png",
+             "img/img3.png", "img/img4.png")
+
+slickR(imagens, width = "90%", height = 500)
+```
+
+<p style="text-align: justify">Nessa sequência, são apresentados prints da telas: (i) Tela Inicial – Inserção das credenciais de acesso; (ii) Tela perfil do Administrador; (iii) Tela perfil do Professor – Espaço reservado para cadastro das avaliações; (iv) Tela perfil do Aluno – Ambiente de realização da avaliação e (v) Tela perfil do Professor – Espaço reservado para visualização dos resultados.</p>
