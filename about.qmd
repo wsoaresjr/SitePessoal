@@ -1,5 +1,5 @@
 ---
-title: "Sobre"
+title: ""
 comments: false
 ---
 
@@ -11,7 +11,7 @@ comments: false
 
 <br>
 
-📑**Download do Curriculo em pdf:** [Link](https://wsoaresjr.github.io/Curriculo/curriculo.pdf)
+📑**Download do Currículo em pdf:** [Link](https://wsoaresjr.github.io/Curriculo/curriculo.pdf)
 
 <br>
 
