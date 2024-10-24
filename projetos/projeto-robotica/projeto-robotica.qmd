@@ -18,7 +18,7 @@ comments: false
 
 ![](resumo_projeto.png){fig-align="center" width="100%"}
 
-<p style="text-align: justify">Desde o ano de 2022, temos conduzido uma iniciativa social na cidade de Piau, localizada na Zona da Mata de Minas Gerais, próximo à Juiz de Fora. Esse projeto foi, inicialmente, concebido para beneficiar um grupo de 30 estudantes, distribuídos de forma igualitária entre meninos e meninas, com o objetivo de reforçar a ideia de que a robótica deve ser acessível para todos, independentemente de gênero. A iniciativa visa ampliar o acesso à tecnologia, desconstruir estereótipos e mostrar que as habilidades de programação e robótica são universais, promovendo a equidade no ensino tecnológico e na formação de futuros profissionais nas áreas de ciência, tecnologia, engenharia e matemática (STEM).</p>
+<p style="text-align: justify">Desde o ano de 2022, temos conduzido uma iniciativa social na cidade de Piau, localizada na Zona da Mata de Minas Gerais, próximo à Juiz de Fora. Esse projeto foi, inicialmente, concebido para beneficiar um **grupo de 30 estudantes da rede pública de ensino**, distribuídos de forma igualitária entre meninos e meninas, com o objetivo de reforçar a ideia de que a robótica deve ser acessível para todos, independentemente de gênero. A iniciativa visa ampliar o acesso à tecnologia, desconstruir estereótipos e mostrar que as habilidades de programação e robótica são universais, promovendo a equidade no ensino tecnológico e na formação de futuros profissionais nas áreas de ciência, tecnologia, engenharia e matemática (STEM).</p>
 
 <p style="text-align: justify">Além disso, o projeto procura inspirar os estudantes a se verem como criadores de tecnologia, e não, apenas, como usuários, oferecendo uma experiência que os capacita para enfrentar os desafios do mundo digital de forma autônoma e criativa. Através dessa perspectiva, buscamos não, apenas, instruir os alunos em aspectos técnicos mas, também, fomentar um senso de pertencimento e confiança, demonstrando que todos são capazes de criar, inovar e transformar suas realidades por meio da tecnologia.</p>
 
@@ -79,3 +79,37 @@ comments: false
 <p style="text-align: justify">Além dos módulos desenvolvidos, é importante destacar que fui responsável pela elaboração de todo o sistema de cadastro das inscrições para o processo seletivo, o que envolveu a criação de uma plataforma eficiente e segura para o registro dos candidatos. Devido ao grande número de inscrições recebidas, que ultrapassou o limite de vagas disponíveis (30 no total), foi necessário elaborar uma prova de seleção criteriosa, que pudesse identificar os estudantes mais preparados e engajados para participar do projeto. Além disso, criei as plataformas digitais que serviram de suporte ao estudo dos estudantes, oferecendo conteúdos e atividades interativas que contribuíram para o aprendizado contínuo. Também, fui responsável por toda a elaboração, edição e revisão do material utilizado, garantindo que o conteúdo fosse didático, acessível e alinhado com os objetivos do projeto. A criação das plataformas digitais envolveu não, apenas, o desenvolvimento técnico mas, também, a curadoria dos conteúdos e a integração de recursos multimídia para tornar o processo de aprendizagem mais dinâmico e atrativo. Dessa forma, além de oferecer uma base sólida de conteúdo, as plataformas, também, permitiram que os estudantes tivessem uma experiência de aprendizado mais completa e envolvente, acessando recursos de estudo de qualquer lugar e a qualquer momento.</p>
 
 <p style="text-align: justify">Por meio desta iniciativa, busco compartilhar comprometimento com a educação e tecnologia, aliando minha experiência de mais de duas décadas no ensino de matemática ao desejo de inspirar uma nova geração a explorar soluções criativas e tecnológicas para enfrentar os desafios contemporâneos. Acredito que projetos como este têm o potencial de transformar a forma como os jovens enxergam a tecnologia, capacitando-os não, apenas, a serem consumidores mas, também, criadores de tecnologia, preparados para contribuir de maneira significativa para a sociedade do futuro.</p>
+
+<br>
+
+<p style="text-align: justify">A seguir são apresentadas algumas imagens do projeto.</p>
+
+```{r echo=FALSE}
+library(slickR)
+library(htmltools)
+
+# Caminhos das imagens e iframe do YouTube
+
+imagens <- c("img/img101.jpg", "img/img102.jpg", "img/img103.jpg")
+video <- list(div(
+    tags$iframe(src = "https://www.youtube.com/embed/I9YF8PIzGb8", 
+                width = "100%", height = "400", frameborder = "0",
+                allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+                allowfullscreen = NA)
+  )
+)
+
+midias <- c(imagens, video)
+
+# Criação do carrossel com `slickR`
+carrossel <- slickR(obj = midias, width = "80%", height = 400)
+
+
+carrossel
+```
+
+
+
+
+
+
