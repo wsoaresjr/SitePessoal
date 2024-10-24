@@ -7,8 +7,138 @@ comments: false
 
 <p style="text-align: justify">Especialista em Data Science e Analytics com MBA pela USP/ESALq e mais de 20 anos de experiência no setor educacional. Graduado em Ciência de Dados e Licenciatura em Matemática, atualmente cursando o Mestrado Profissional em Matemática, Estatística e Computação Aplicadas à Indústria (MECAI/USP). Experiência sólida em estatística, desenvolvimento de aplicativos web e consultoria de dados, com foco em Avaliações de Larga Escala, Teoria de Resposta ao Item e Machine Learning.</p>
 
-<br> <br>
+<p style="text-align: justify">Nas habilidades comportamentais destacam-se: Liderança e Gerenciamento de Equipes e Projetos; Comunicação clara e efetiva; Pensamento Analítico; Capacidade de adaptação e aprendizado contínuo; Disponibilidade para viagens.</p>
 
-**Em Desenvolvimento**
+<br>
 
-### 
+📑**Download do Curriculo em pdf:** [Link](https://wsoaresjr.github.io/Curriculo/curriculo.pdf)
+
+<br>
+
+### 🎓 Formação Acadêmica
+
+-   **Mestrado Profissional em Matemática, Estatística e Computação Aplicadas à Indústria (MECAI) - (2024 - Atualmente)**
+
+    Universidade de São Paulo
+
+-   **MBA em Data Science and Analytics - (2022 - 2024)**
+
+    Universidade de São Paulo / ESALq
+
+    TCC: Plataforma de Teste Adaptativo para Avaliação em Larga Escala, utilizando *Machine Learning*
+
+-   **Graduação Tecnológica em Ciência de Dados - (2020 - 2022)**
+
+    Universidade Cruzeiro do Sul
+
+-   **Graduação - Licenciatura em Matemática - (1998 - 2001)**
+
+    Universidade Federal do Rio de Janeiro
+
+<br>
+
+### 💼 Experiência Profissional
+
+-   **Fundador - Exploratória Digital - (2022 - Atualmente)**
+
+    [Exploratória Digital - Consultoria em Dados]{.underline}
+
+    -   Consultoria em Análise de Dados, Ciência de Dados e Modelagem de Machine Learning;
+
+    -   Desenvolvimento de dashboards interativos em R, Power BI e Python;
+
+    -   Desenvolvimento de Aplicações Web com Shiny e Streamlit;
+
+    -   Treinamento de equipes em ferramentas de análise de dados;
+
+    -   Gestão de projetos e implementação de estratégias de dados.
+
+-   **Analista Pedagógico Pleno - (2023 - 2024)**
+
+    [Instituto Sonho Grande]{.underline}
+
+    -   Suporte na implementação e melhoria de modelos pedagógicos em escolas de tempo integral;
+
+    -   Análise e acompanhamento de indicadores de desempenho educacional;
+
+    -   Desenvolvimento de relatórios de impacto e de ações pedagógicas.
+
+-   **Analista de Instrumentos de Avaliação - (2017 - 2023)**
+
+    [Fundação CAEd]{.underline}
+
+    -   Elaboração e revisão de instrumentos de avaliação para redes estaduais e municipais;
+
+    -   Condução de estudos de padrões de qualidade em avaliações educacionais;
+
+    -   Liderança da equipe de Matemática, com foco em resultados pedagógicos.
+
+-   **Coordenador de Apropriação dos Resultados das Avaliações Externas - (2013 - 2017)**
+
+    [Secretaria de Estado de Educação-RJ]{.underline}
+
+    -   Coordenação de análises dos resultados de avaliações de larga escala (ENEM, SAEB, PISA, SAERJ);
+
+    -   Elaboração de diagnósticos sobre o desempenho escolar;
+
+    -   Assessoria para implementação de ações de melhoria pedagógica.
+
+-   **Subcoordenador Estadual Logístico para o SAEB - (2013 - 2015)**
+
+    [Cesgranrio, CAEd, Seeduc-RJ]{.underline}
+
+    -   Responsável por apoiar o Coordenador estadual na elaboração do Plano de Logística da Aplicação da sua UF; Cumprir o cronograma das atividades; Orientar e monitorar o cadastramento no sistema de cadastro de colaboradores dos Coordenadores de Polo, da sua UF de atuação; Garantir o cumprimento das instruções por parte de todos de sua equipe; Prestar assessoria às escolas para esclarecimentos sobre o SAEB 2015.
+
+-   **Professor de Matemática - (2008 - 2024)**
+
+    [Secretaria de Estado de Educação-RJ]{.underline}
+
+    -   Planejamento e execução de atividades pedagógicas focadas no uso de dados para melhoria do desempenho escolar.
+
+<br>
+
+### 📘 Certificações
+
+-   **Gestão de Projetos** (Veduca/USP) - 2024;
+
+-   **Product Owner** (Awari) - 2023;
+
+-   **ETL e Análise de Dados em R** (Udemy) - 2023;
+
+-   **Power BI e DAX** (Udemy) - 2023;
+
+-   **Machine Learning in R** (Udemy) - 2021;
+
+-   **Desenvolvimento de Interfaces com Shiny em R** (Udemy) - 2020.
+
+<br>
+
+### 💻 Habilidades Técnicas
+
+-   R, Python, SQL;
+
+-   Power BI, Looker Studio, Shiny, Streamlit;
+
+-   Algoritmos de Aprendizado de Máquina;
+
+-   R-Shiny, Python-Django, Python-Flask;
+
+-   Processos de extração, transformação e carregamento de dados.
+
+<br>
+
+### 📋 Voluntariado
+
+-   **Professor de Progração e Automação Educacional (Robótica) - (2022 - 2024)**
+
+    [Projeto Social]{.underline}
+
+    -   Algoritmos e Linguagem de Programação;
+
+    -   Montagem de circuitos com microcontroladores: Arduíno e Raspberry Pi;
+
+    -   Linguagens de Programação: C++, Python e R;
+
+    -   Desenvolvimento de *bots*;
+
+    -   Desenvolvimento de projetos com metodologia *Hands on*.
