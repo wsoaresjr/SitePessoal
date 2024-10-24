@@ -1,0 +1,224 @@
+---
+title: "Adicionando Interatividade em gráficos criados com ggplot2"
+subtitle: "Neste posto, procuro apresentar um pequeno tutorial sobre como inserir interatividade em gráficos criados com ggplot2, a partir do pacote ggiraph. Para isso, utilizarei aplicativos Shiny para demonstrar"
+author: "Walter Soares"
+categories:
+  - Ggiraph
+  - Ggplot2
+  - Shiny
+  - Tutorial
+date: 2024-10-24
+toc: true
+image: "capa_post.png"
+#comments: false
+---
+
+<p style="text-align: justify">O pacote ggplot2 é reconhecido como uma importante ferramenta para a criação de visualizações de dados, principalmente em R, proporcionando gráficos de alta qualidade de maneira eficiente e intuitiva.</p>
+
+<p style="text-align: justify">Contudo, os gráficos gerados pelo ggplot2 são, por natureza, estáticos, o que limita a interação do usuário com as visualizações. A ausência de elementos interativos, como *tooltips* ou ações baseadas em cliques, pode ser uma barreira para aqueles que desejam uma exploração mais aprofundada dos dados, diretamente, a partir das visualizações. Veja o exemplo abaixo, em que temos uma aplicação Shiny, com visualização gráfica a partir do pacote **ggplot2**. Neste tutorial, vamos gerar um conjunto de dados fictício relacionado a vendas de produtos e utilizaremos o Shiny para construir um dashboard que permita explorá-los.</p>
+
+<br>
+
+```{r echo=TRUE, warning=FALSE}
+# Gerando dados fictícios de vendas
+set.seed(123)
+
+produtos <- c("Produto A", "Produto B", "Produto C", "Produto D")
+meses <- c("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez")
+
+dados_vendas <- data.frame(
+  produto = sample(produtos, 100, replace = TRUE),
+  mes = sample(meses, 100, replace = TRUE),
+  quantidade_vendida = sample(1:50, 100, replace = TRUE),
+  preco_total = round(runif(100, 100, 1000), 2)
+)
+
+# Gerando a Aplicação Shiny
+# Pacotes necessários
+library(shiny)
+library(ggplot2)
+
+# Interface do Usuário
+ui <- fluidPage(
+  titlePanel("Dashboard de Vendas"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("produto", "Selecione o Produto:", 
+                  choices = sort(unique(dados_vendas$produto)))
+    ),
+    mainPanel(
+      plotOutput("grafico_vendas")
+    )
+  )
+)
+
+# Servidor
+server <- function(input, output) {
+  output$grafico_vendas <- renderPlot({
+    # Filtrando os dados com base na seleção do usuário
+    dados_filtrados <- subset(dados_vendas, 
+                              produto == input$produto)
+    
+    # Criando o gráfico com ggplot2
+    ggplot(dados_filtrados, aes(x = mes, 
+                                y = quantidade_vendida, 
+                                fill = mes)) +
+      geom_col() +
+      theme_minimal() +
+      labs(title = paste("Vendas Mensais -", input$produto),
+           x = "Mês", 
+           y = "Quantidade Vendida")
+  })
+}
+
+# shinyApp(ui = ui, server = server)
+```
+
+<iframe src="http://shinyappserver.com/Exemplo_Ggplot2/" style="width: 800px; height: 500px; border: none; overflow: hidden;" frameborder="0"></iframe>
+
+<p style="text-align: justify">Perceba que a representação gráfica não apresenta os recursos interativos.</p>
+
+<p style="text-align: justify">Agora, apresentarei uma solução para adicionar interatividade a esses gráficos por meio do pacote **ggiraph**, especialmente, dentro de uma aplicação Shiny. O **ggiraph** possibilita a integração de funcionalidades interativas ao **ggplot2**, como *tooltips*, efeitos de *hover* e ações de clique, sem a necessidade de codificação em *JavaScript*, enriquecendo a experiência do usuário. Esta abordagem permitirá uma navegação mais intuitiva, proporcionando uma análise exploratória dos dados, diretamente, na interface gráfica, sem depender de interações complexas ou comandos adicionais. Dessa forma, faremos aplicaremos o primeiro exemplo de interatividade.</p>
+
+<p style="text-align: justify">Explicando:</p>
+
+<p style="text-align: justify">1. Utiliazremos um girafeOutput para exibir o gráfico interativo;</p>
+
+<p style="text-align: justify">2. No servidor, utilizamos o **renderGirafe** para gerar o gráfico interativo. O gráfico é criado com o ggplot2 e transformado em interativo com a função *girafe()*. A função *geom_col_interactive()* é utilizada para adicionar *tooltips* aos elementos do gráfico, exibindo informações detalhadas sobre as vendas ao passar o mouse sobre cada barra. Veja o código abaixo e, a seguir, a aplicação sendo executada.</p>
+
+```{r echo=TRUE, warning=FALSE}
+# Gerando dados fictícios de vendas
+set.seed(123)
+
+produtos <- c("Produto A", "Produto B", "Produto C", "Produto D")
+meses <- c("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez")
+
+dados_vendas <- data.frame(
+  produto = sample(produtos, 100, replace = TRUE),
+  mes = sample(meses, 100, replace = TRUE),
+  quantidade_vendida = sample(1:50, 100, replace = TRUE),
+  preco_total = round(runif(100, 100, 1000), 2)
+)
+
+# Gerando a Aplicação
+# Pacotes necessários
+library(shiny)
+library(ggplot2)
+library(ggiraph)
+
+# Interface do Usuário
+ui <- fluidPage(
+  titlePanel("Dashboard de Vendas"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("produto", "Selecione o Produto:", 
+                  choices = unique(dados_vendas$produto))
+    ),
+    mainPanel(
+      girafeOutput("grafico_vendas")
+    )
+  )
+)
+
+# Servidor
+server <- function(input, output) {
+  output$grafico_vendas <- renderGirafe({
+    # Filtrando os dados com base na seleção do usuário
+    dados_filtrados <- subset(dados_vendas, 
+                              produto == input$produto)
+    
+    # Criando o gráfico com ggplot2
+    grafico <- ggplot(dados_filtrados, 
+                      aes(x = mes, 
+                          y = quantidade_vendida, 
+                          fill = mes)) +
+      geom_col_interactive(
+        aes(tooltip = paste("Mês: ", mes, 
+                            "\nQuantidade Vendida: ",
+                            quantidade_vendida),
+            data_id = mes)) +
+      theme_minimal() +
+      labs(title = paste("Vendas Mensais -", input$produto),
+           x = "Mês", y = "Quantidade Vendida")
+    
+    # Transformando o gráfico em um objeto interativo
+    girafe(ggobj = grafico, 
+           options = list(opts_selection(type = "single")))
+  })
+}
+
+# shinyApp(ui = ui, server = server)
+```
+<iframe src="http://shinyappserver.com/Exemplo2_Ggplot2/" style="width: 800px; height: 500px; border: none; overflow: hidden;" frameborder="0"></iframe>
+
+<p style="text-align: justify">Agora, para tornar o app ainda mais interativo, além de apresentar os *tooltips*, vamos adicionar uma janela modal para *Drill-Down* que exibe detalhes sobre as vendas mensais quando o usuário clica em uma barra do gráfico.</p>
+
+<p style="text-align: justify">Neste código, utilizamos a função *showModal(*) para exibir uma janela modal quando o usuário clica em uma barra do gráfico. A janela exibe uma tabela com detalhes das vendas para o mês selecionado, permitindo um *drill-down* de forma simples e intuitiva.</p>
+
+```{r echo=TRUE, warning=FALSE}
+# Gerando dados fictícios de vendas
+set.seed(123)
+
+produtos <- c("Produto A", "Produto B", "Produto C", "Produto D")
+meses <- c("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez")
+
+dados_vendas <- data.frame(
+  produto = sample(produtos, 100, replace = TRUE),
+  mes = sample(meses, 100, replace = TRUE),
+  quantidade_vendida = sample(1:50, 100, replace = TRUE),
+  preco_total = round(runif(100, 100, 1000), 2)
+)
+
+# Gerando a Aplicação Shiny
+# Pacotes necessários
+library(shiny)
+library(ggplot2)
+library(ggiraph)
+
+# Interface do Usuário
+ui <- fluidPage(
+  titlePanel("Dashboard de Vendas"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("produto", "Selecione o Produto:", choices = unique(dados_vendas$produto))
+    ),
+    mainPanel(
+      girafeOutput("grafico_vendas")
+    )
+  )
+)
+
+# Atualizando o servidor para incluir janela modal
+server <- function(input, output) {
+  output$grafico_vendas <- renderGirafe({
+    dados_filtrados <- subset(dados_vendas, produto == input$produto)
+    
+    # Criando o gráfico com ggplot2
+    grafico <- ggplot(dados_filtrados, aes(x = mes, y = quantidade_vendida, fill = mes)) +
+      geom_col_interactive(aes(tooltip = paste("Mês: ", mes, "\nQuantidade Vendida: ", quantidade_vendida), data_id = mes)) +
+      theme_minimal() +
+      labs(title = paste("Vendas Mensais -", input$produto), x = "Mês", y = "Quantidade Vendida")
+    
+    girafe(ggobj = grafico, options = list(opts_selection(type = "single")))
+  })
+  
+  observeEvent(input$grafico_vendas_selected, {
+    showModal(modalDialog(
+      title = paste("Detalhes de Vendas - Mês: ", input$grafico_vendas_selected),
+      renderTable({
+        subset(dados_vendas, mes == input$grafico_vendas_selected & produto == input$produto)
+      }),
+      easyClose = TRUE
+    ))
+  })
+  
+}
+  
+  # shinyApp(ui = ui, server = server)
+```
+
+<iframe src="http://shinyappserver.com/Exemplo3_Ggplot2/" style="width: 800px; height: 500px; border: none; overflow: hidden;" frameborder="0"></iframe>
+
+<p style="text-align: justify">Com o uso do pacote **ggiraph** em conjunto com o Shiny, conseguimos adicionar uma camada de interatividade aos nossos *dashboards*, tornando-os mais envolventes e intuitivos para os usuários. A capacidade de adicionar *tooltips* e eventos de clique facilita a exploração dos dados sem a necessidade de escrever código *JavaScript*.</p>
+
+<p style="text-align: justify">Experimente utilizar o **ggiraph** em seus próximos projetos com Shiny e veja como ele pode transformar a forma como os usuários interagem com seus dados!</p>
