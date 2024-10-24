@@ -82,9 +82,9 @@ server <- function(input, output) {
 
 <p style="text-align: justify">Explicando:</p>
 
-<p style="text-align: justify">1. Utiliazremos um girafeOutput para exibir o gráfico interativo;</p>
+<p style="text-align: justify">1.  Utiliazremos um girafeOutput para exibir o gráfico interativo;    </p>
 
-<p style="text-align: justify">2. No servidor, utilizamos o **renderGirafe** para gerar o gráfico interativo. O gráfico é criado com o ggplot2 e transformado em interativo com a função *girafe()*. A função *geom_col_interactive()* é utilizada para adicionar *tooltips* aos elementos do gráfico, exibindo informações detalhadas sobre as vendas ao passar o mouse sobre cada barra. Veja o código abaixo e, a seguir, a aplicação sendo executada.</p>
+<p style="text-align: justify">2.  No servidor, utilizamos o **renderGirafe** para gerar o gráfico interativo. O gráfico é criado com o ggplot2 e transformado em interativo com a função *girafe()*. A função *geom_col_interactive()* é utilizada para adicionar *tooltips* aos elementos do gráfico, exibindo informações detalhadas sobre as vendas ao passar o mouse sobre cada barra. Veja o código abaixo e, a seguir, a aplicação sendo executada.</p>
 
 ```{r echo=TRUE, warning=FALSE}
 # Gerando dados fictícios de vendas
@@ -149,6 +149,7 @@ server <- function(input, output) {
 
 # shinyApp(ui = ui, server = server)
 ```
+
 <iframe src="http://shinyappserver.com/Exemplo2_Ggplot2/" style="width: 800px; height: 500px; border: none; overflow: hidden;" frameborder="0"></iframe>
 
 <p style="text-align: justify">Agora, para tornar o app ainda mais interativo, além de apresentar os *tooltips*, vamos adicionar uma janela modal para *Drill-Down* que exibe detalhes sobre as vendas mensais quando o usuário clica em uma barra do gráfico.</p>
